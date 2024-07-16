@@ -1,7 +1,9 @@
 import * as React from 'react';
-import { Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 import TextSection from './TextSection';
 import Achievement from './Achievement';
+
+type AchievementType = [string, number, string];
 
 export interface ProfileOverviewProps {
     title?: string | React.ReactElement,
@@ -11,7 +13,7 @@ export interface ProfileOverviewProps {
     center?: boolean,
     tinge?: string,
     colors?: Array<string>
-    achievements?: Array<string | number> | Array<Array<string | number>>,
+    achievements?: Array<AchievementType>,
 }
 
 function ProfileOverview({ title, subtitle, content, divider, center, tinge, colors, achievements }: ProfileOverviewProps) {

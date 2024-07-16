@@ -37,6 +37,7 @@ function GeneralPopper({ popper, children }: GeneralPopperProps) {
         anchorEl={anchorEl}
         placement='auto-start'
         transition
+        sx={{ zIndex: 99 }}
       >
         {({ TransitionProps }) => (
           <Collapse {...TransitionProps} timeout={250}>
