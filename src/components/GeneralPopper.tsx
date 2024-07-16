@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Popper from '@mui/material/Popper';
-import { Card, Collapse, Fade, Typography } from '@mui/material';
+import { Collapse, Fade } from '@mui/material';
 
 interface GeneralPopperProps {
   popper: React.ReactElement,
@@ -11,7 +11,7 @@ function GeneralPopper({ popper, children }: GeneralPopperProps) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const container = React.useRef(null);
 
-  let timer;
+  let timer: number;
   const handleMouseEnter = () => {
       timer = setTimeout(() => {
           setAnchorEl(container.current);

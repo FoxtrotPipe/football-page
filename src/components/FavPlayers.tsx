@@ -15,7 +15,7 @@ import copaAmericaTrophy from '../assets/copaamerica.png';
 import worldCupTrophy from '../assets/world-cup.png';
 import euroTrophy from '../assets/euro-trophy.png';
 import goldenShoe from '../assets/golden-shoe.png';
-import uefa from '../assets/uefa.png';
+// import uefa from '../assets/uefa.png';
 import uefaTrophy from '../assets/uefa-trophy.png';
 
 function FavPlayers() {

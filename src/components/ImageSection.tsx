@@ -54,10 +54,10 @@ function ImageSection({ alt, src, description, icon, square, tinge, colors, vari
                     backgroundColor: 'transparent',
                     // background: `repeating-linear-gradient( -45deg, rgba(219, 0, 48, .5), rgba(219, 0, 48, .5) 8px, transparent 8px, transparent 48px),
                     // repeating-linear-gradient( -45deg, rgba(0, 77, 152, .5) 24px, rgba(0, 77, 152, .5) 32px, transparent 32px, transparent 72px )`,
-                    background: `
+                    background: colors != null ? `
                         repeating-linear-gradient( -45deg, ${colors[0]}, ${colors[0]} 8px, transparent 8px, transparent 48px),
                         repeating-linear-gradient( -45deg, ${colors[1]} 24px, ${colors[1]} 32px, transparent 32px, transparent 72px )
-                    `
+                    `: ''
                         // repeating-linear-gradient( -45deg, ${colors[0]}, ${colors[0]} 8px, transparent, transparent)
                     ,
                     borderRadius: 1,

@@ -1,4 +1,4 @@
-import { Box, Card, Divider, Typography } from "@mui/material";
+import { Box, Card, Typography } from "@mui/material";
 import GeneralPopper from "./GeneralPopper";
 import YoutubeEmbed from "./YoutubeEmbed";
 

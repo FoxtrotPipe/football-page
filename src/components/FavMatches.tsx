@@ -1,4 +1,4 @@
-import { Box, Typography, Grid } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { AR, FR, GB, UY } from 'country-flag-icons/react/1x1';
 
 import BillboardSection from './BillboardSection';
