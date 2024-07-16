@@ -37,7 +37,7 @@ function BestMoments() {
                 Messi and Julian Alvarez combined to release Alexis Mac Allister. The Brighton midfielder then crossed for Di María to sweep past Hugo Lloris."
                 divider
                 center
-                events={['Ángel Di María 36\'', 'left', 'https://www.youtube-nocookie.com/embed/Kutz0UJExSU?si=b8Xu35NpVZR2niZI', 11, 31]}
+                events={[['Ángel Di María 36\'', 'left', 'https://www.youtube-nocookie.com/embed/Kutz0UJExSU?si=b8Xu35NpVZR2niZI', 11, 31]]}
                 single
                 colors={['rgba(108, 172, 228, .5)', 'rgba(255, 255, 255, .5)']}
                 variant='pattern'
@@ -58,7 +58,7 @@ function BestMoments() {
                 Heitinga was dismissed and just as penalties seemed inevitable, up popped Iniesta to ensure European champions Spain are the eighth name on the World Cup trophy."
                 divider
                 center
-                events={['Andrés Iniesta 116\'', 'left', 'https://www.youtube-nocookie.com/embed/Q1vFGbBunqU?si=t1Ur3b2bjZSivT6G', 80, 100]}
+                events={[['Andrés Iniesta 116\'', 'left', 'https://www.youtube-nocookie.com/embed/Q1vFGbBunqU?si=t1Ur3b2bjZSivT6G', 80, 100]]}
                 single
                 colors={['rgba(252, 181, 7, .5)', 'rgba(2, 18, 80, .5)']}
                 variant='pattern'
@@ -79,7 +79,7 @@ function BestMoments() {
                 Suarez seized his chance, half-turning toward the Kop to lash a dipping inch-perfect shot over and across the Norwich goalkeeper from 40 yards."
                 divider
                 center
-                events={['Luis Suárez 15\'', 'left', 'https://www.youtube-nocookie.com/embed/2wIw446It7k?si=Y-njPl5b-V4Geqy1', 125, 140]}
+                events={[['Luis Suárez 15\'', 'left', 'https://www.youtube-nocookie.com/embed/2wIw446It7k?si=Y-njPl5b-V4Geqy1', 125, 140]]}
                 single
                 colors={['rgba(255, 0, 0, .5)', 'rgba(255, 255, 255, .5)']}
                 variant='pattern'

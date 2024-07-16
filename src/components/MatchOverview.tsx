@@ -4,8 +4,11 @@ import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import TextSection from './TextSection';
 import ClipPopper from './ClipPopper';
 
+type Orientation = 'left' | 'right';
+type Event = [string | React.ReactElement, Orientation] | [string | React.ReactElement, Orientation, string, number, number];
+
 interface EventRowProps {
-    orientation?: 'left' | 'right',
+    orientation?: Orientation,
     src?: string,
     start?: number,
     end?: number,
@@ -21,7 +24,7 @@ export interface MatchOverviewProps {
     divider?: boolean,
     center?: boolean,
     tinge?: string,
-    events?: Array<string | number> | Array<Array<string | number>>,
+    events?: Array<Event>,
     single?: boolean
 }
 
@@ -138,35 +141,22 @@ function MatchOverview({ title, subtitle, content, divider, center, tinge, event
                 variant='bar'
             />
             <Grid container my={5}>
-                { single ?
-                    <EventRow
-                        orientation={events[1]}
-                        src={events[2]}
-                        start={events[3]}
-                        end={events[4]}
+                { events?.map((row, index) => (
+                    <EventRow 
+                        key={index}
+                        orientation={row[1]} 
+                        src={row[2]}
+                        start={row[3]}
+                        end={row[4]}
                         color='white'
-                        fullWidth
+                        fullWidth={single}
                     >
                         <Typography>
-                            {events[0]}
+                            {row[0]}
                         </Typography>
-                    </EventRow> :
-                    events?.map((row, index) => (
-                        <EventRow 
-                            key={index}
-                            orientation={row[1]} 
-                            src={row[2]}
-                            start={row[3]}
-                            end={row[4]}
-                            color='white'
-                        >
-                            <Typography>
-                                {row[0]}
-                            </Typography>
-                        </EventRow>
-                    ))
-                }
-                {events != null ?
+                    </EventRow>
+                ))}
+                { events != null ?                                    
                     <Grid
                         item
                         xs={12}
