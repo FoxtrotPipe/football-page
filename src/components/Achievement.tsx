@@ -5,7 +5,7 @@ import Mask from "./Mask"
 interface AchievementProps {
     alt?: string
     src: string,
-    data: string,
+    data: number,
     title: string,
     tinge?: string
 }
