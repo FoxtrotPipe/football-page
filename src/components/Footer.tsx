@@ -41,7 +41,7 @@ function Footer() {
                 <Stack spacing={1} direction='row'>
                     <Icon 
                         component='a' 
-                        href='www.linkedin.com/in/blaketam' 
+                        href='https://www.linkedin.com/in/blaketam' 
                         sx={{ 
                             color: 'white', 
                             opacity: .5,
@@ -56,7 +56,7 @@ function Footer() {
                     </Icon>
                     <Icon
                         component='a' 
-                        href='www.linkedin.com/in/blaketam' 
+                        href='mailto:cstamac@connect.ust.hk' 
                         sx={{ 
                             color: 'white',
                             opacity: .5,
