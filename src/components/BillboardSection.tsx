@@ -5,6 +5,8 @@ import MatchOverview, { MatchOverviewProps } from "./MatchOverview";
 import { ImageSectionProps } from "./ImageSection";
 import ScoreSection from "./ScoreSection";
 
+import $ from 'jquery';
+
 interface BillboardSectionProps extends ImageSectionProps, MatchOverviewProps {
     scores: Array<MatchScoreProps>
 }
