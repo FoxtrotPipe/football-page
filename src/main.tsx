@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 // import Home from './components/Home.tsx'
 import FavMatches from './components/FavMatches.tsx'
 import FavPlayers from './components/FavPlayers.tsx'
@@ -10,7 +10,7 @@ import BestMoments from './components/BestMoments.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Router>
+    <Router basename='/'>
       <Routes>
         <Route path='/' element={<App/>}>
         {/* <Route path='/' element={<App/>}>
