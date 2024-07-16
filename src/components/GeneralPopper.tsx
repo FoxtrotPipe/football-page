@@ -11,7 +11,7 @@ function GeneralPopper({ popper, children }: GeneralPopperProps) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const container = React.useRef(null);
 
-  let timer: number;
+  let timer: NodeJS.Timeout;
   const handleMouseEnter = () => {
       timer = setTimeout(() => {
           setAnchorEl(container.current);
