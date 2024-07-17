@@ -103,7 +103,7 @@ function ResponsiveAppBar() {
           </Box>
           <Link to='/'>
             <Typography
-              variant="h5"
+              variant="h6"
               noWrap
               sx={{
                 mr: 2,
